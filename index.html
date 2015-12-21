@@ -689,7 +689,13 @@
 				var image = 'img/LaxMarker.png';
 
                 var marker = new google.maps.Marker({
-				      position: mapCenterLatLng,
+				      position: shipleyFarm,
+				      map: map,
+				      icon: image
+				  });
+
+                var marker = new google.maps.Marker({
+				      position: shipleyMain,
 				      map: map,
 				      icon: image
 				  });
