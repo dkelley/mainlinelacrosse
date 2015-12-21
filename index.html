@@ -2,7 +2,8 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js"> <!--<![endif]-->
     <head>
 		<!-- BASICS -->
         <meta charset="utf-8">
@@ -17,6 +18,42 @@
         <link rel="stylesheet" href="css/style.css">
 		<!-- skin -->
 		<link rel="stylesheet" href="skin/default.css">
+		<style >
+			.registrationForm {
+				font-weight: bold;
+				color: black;
+			}
+
+			.registrationForm input {
+				color: black;
+				font-weight: normal;
+			}
+
+			.datefield { 
+			    display: inline; 
+			    padding: 0.3em; 
+			    border: inset 1px #CCC; 
+			    background: #FFF; 
+			    border-radius: 4px;
+			    color: #666;
+			}
+
+			.datefield * { 
+			    display: inline-block;
+			}
+
+			.datefield input { 
+			    width: 2.6em; 
+			    padding: 0 0.4em; 
+			    border: none; 
+			    font-size: 100%; 
+			    background: none;
+			    color: #000;            
+			}
+
+			.datefield input#year { width:3.5em; }
+			.datefield input:focus { outline:none; }
+		</style>
     </head>
 	 
     <body>
@@ -33,9 +70,16 @@
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav" data-0="margin-top:20px;" data-300="margin-top:5px;">
 						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="#section-services">Philosophy</a></li>
 						<li><a href="#section-about">Directors</a></li>
-						<li><a href="#section-works">Guest Coaches</a></li -->
+						<!--li><a href="#section-works">Guest Coaches</a></li-->
 						<li><a href="#section-contact">Contact</a></li>
+						<li class="dropdown">
+				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Camps <span class="caret"></span></a>
+				          <ul class="dropdown-menu">
+				            <li><a href="goalie2016.html">Goalie Clinic</a></li>
+				          </ul>
+				        </li>
 					</ul>
 				</div><!--/.navbar-collapse -->
 			</div>
@@ -44,38 +88,42 @@
 		<section class="featured">
 			<div class="container"> 
 				<div class="row mar-bot40">
-					<div class="col-md-6 col-md-offset-3">
-						
+					<div class="col-md-8 col-md-offset-2">
 						<div class="align-center">
 							<i class="fa fa-star fa-5x mar-bot20"></i>
-							<h2 class="slogan">Main Line Lacrosse Camp</h2>
+							<h2 class="slogan">Main Line Lacrosse</h2>
 						</div>
 						<div>
 							<p>
-								Main Line Lacrosse is proud to be offering a specialized Lacrosse Camp for Boys Ages 5 to 	16.  Coaches will be from the NCAAs top programs like the University of North Carolina! 	
-								<b>Every day will have a special guest director</b> from one of the Top D1 programs in the country!
+								Main Line Lacrosse is proud to be offering a specialized Lacrosse opportunities for boys &amp; girls Ages 5 to 16.  We work with expert coaches from NCAAs top programs and top players to bring great lacrosse options to the Main line!
 							</p>
-							<p>
-								Camp will run from Mon June-22 through Thurs June 25 9a-3p at the Shipley Farm Fields in Gladwyne, PA.  On Friday June 26 from 9am-12pm, we will be offering a special day focuesed on Stickwork, along with a Goalie and Shooters Clinic.
-							</p>
-							<p>
-								<b>Pricing</b>
-								<ul>
-									<li>Full Day Mon - Thurs - $375</li>
-									<li>Half Day Mon - Thurs (ages 5-8 only) - $200</li>
-									<li>Friday Clinic - $125</li>
-								</ul>
-							</p>	
 						</div>
 					</div>
+					<div class="col-md-8 col-md-offset-2">
+						<div>
+							<button type="button" id="goalieCamp" class="btn-lg btn-primary" autocomplete="off" onclick="location.href='goalie2016.html'";>
+  								Catrano Goalie Clinic
+							</button>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</section>
 		
 		<!-- services -->
-<!-- 		<section id="section-services" class="section pad-bot30 bg-white">
+	<section id="section-services" class="section pad-bot30 bg-white">
 		<div class="container"> 
 		
+				<div class="row mar-bot40">
+					<div class="col-md-offset-3 col-md-6">
+						<div class="section-header">
+							<h2 class="section-heading animated" data-animation="bounceInUp">Our Philosophy</h2>
+							<p>We believe learning the game should be fun, and that while playing games is an important part of development taking the time to develop the core skills required is a fundemantal part of the process.</p>
+						</div>
+					</div>
+				</div>
+
 			<div class="row mar-bot40">
 				<div class="col-lg-4" >
 					<div class="align-center">
@@ -104,7 +152,7 @@
 			</div>	
 
 		</div>
-		</section> -->
+	</section>
 			
 		<!-- spacer section:testimonial -->
 <!-- 		<section id="testimonials" class="section" data-stellar-background-ratio="0.5">
@@ -130,8 +178,9 @@
 
 		<section id="parallax2" class="section parallax" data-stellar-background-ratio="0.5">	
             <div class="align-center pad-top40 pad-bot40">
-                <blockquote class="mediumquote color-white">Hosted at The Shipley Schools Turf Lacrosse Fields</blockquote>
-				<p class="color-white">1313 Waverly Rd, Gladwyne, PA 19035</p>
+                <blockquote class="mediumquote color-white">Hosted at The Shipley Schools</blockquote>
+                <p class="color-white">814 Yarrow St, Bryn Mawr, PA 19010</p>
+				<!--p class="color-white">1313 Waverly Rd, Gladwyne, PA 19035</p-->
             </div>
 		</section>
 
@@ -150,32 +199,18 @@
 				</div>
 
 					<div class="row align-center mar-bot40">
-						<div class="col-md-4">
+						<!--div class="col-md-4">
 							<div class="team-member">
-								<figure class="member-photo"><img src="img/team/Mark-Duncan.png" alt="Goldstein" /></figure>
+								<figure class="member-photo"><img src="img/team/Tim-Goldstein.png" alt="Goldstein" /></figure>
 								<div class="team-detail">
-									<h4>Mark Duncan</h4>
-									<span style="font-weight: bold;">Director</span>
-									<div class="align-left">
-									<ul>
-										<li>1997 and 1998 1st Team All-Patriot League</li>
-										<li>1998 Patriot League Offensive Player of the Year </li>
-										<li>Coach of the Year in 2005</li>
-									</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="team-member">
-								<figure class="member-photo"><img src="img/team/Joe-Breshi.jpg" alt="Goldstein" /></figure>
-								<div class="team-detail">
-								<h4>Joe Breschi</h4>
+								<h4>Tim Goldstein</h4>
 								<span style="font-weight: bold;">Director</span>
 									<div class="align-left">
 									<ul>
-										<li>UNC Varsity Lacrosse Coach</li>
-										<li>Nuff said...</li>
+										<li>Two-time first-team All-American</li>
+										<li>Led Cornell to the 1987 NCAA championship</li>
+										<li>Named the Most Outstanding Player of the 1987 NCAA tournament </li>
+										<li>Member of the 1990 U.S. team that won a world championship</li>
 									</ul>
 									</div>
 								</div>
@@ -194,6 +229,38 @@
 										<li>Two time All ACC Player</li>
 										<li>MVP 1991 NCAA National Championship game</li>
 										<li>MVP 1991 ACC Tournament</li>
+									</ul>
+									</div>
+								</div>
+							</div>
+						</div-->						
+						<div class="col-md-6">
+							<div class="team-member">
+								<figure class="member-photo"><img src="img/team/Mark-Duncan.png" alt="Goldstein" /></figure>
+								<div class="team-detail">
+									<h4>Mark Duncan</h4>
+									<span style="font-weight: bold;">Director</span>
+									<div class="align-left">
+									<ul>
+										<li>1996 1st Team All-Patriot League</li>
+										<li>1998 Patriot League Offensive Player of the Year </li>
+										<li>Coach of the Year in 2005</li>
+									</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="team-member">
+								<figure class="member-photo"><img src="img/team/Mark-Duncan.png" alt="Goldstein" /></figure>
+								<div class="team-detail">
+									<h4>Dan Kelley</h4>
+									<span style="font-weight: bold;">Director</span>
+									<div class="align-left">
+									<ul>
+										<li>1996 1st Team All-Patriot League</li>
+										<li>1995 2nd Team All-Patriot League</li>
+										<li>President Radnor Girls Lacrosse</li>
 									</ul>
 									</div>
 								</div>
@@ -225,7 +292,7 @@
 		</section>
 		
 		<!-- section works -->
-		<section id="section-works" class="section clearfix"><!-- appear -->
+		<!--section id="section-works" class="section clearfix">
 			<div class="container">
 				
 				<div class="row mar-bot40">
@@ -238,33 +305,29 @@
 				</div>
 					
                         <div class="row">
-       <!--                <nav id="filter" class="col-md-12 text-center">
-                            <ul>
-                              <li><a href="#" class="current btn-theme btn-small" data-filter="*">All</a></li>
-                              <li><a href="#"  class="btn-theme btn-small" data-filter=".webdesign" >Web Design</a></li>
-                              <li><a href="#"  class="btn-theme btn-small" data-filter=".photography">Photography</a></li>
-                              <li><a href="#" class="btn-theme btn-small" data-filter=".print">Print</a></li>
-                            </ul>
-                          </nav> 
-		-->
                           <div class="col-md-12">
                             <div class="row">
-                              <div class="portfolio-items clearfix" id="3"><!-- isotopeWrapper -->
+                              <div class="portfolio-items clearfix" id="3">
 							  
-                                <article class="col-md-4 isotopeItem webdesign">
+                                <article class="col-md-3 isotopeItem webdesign">
 									<div class="portfolio-item">
-										<img src="img/portfolio/coach2.jpg" alt="" />
+										<h3 align="center">Monday</h3>
+										<img src="img/team/Joe-Breshi.jpg" alt="" />
 										 <div class="portfolio-desc align-center">
 											<div class="folio-info">
-												<h5><a href="#">Guest Director</a></h5>
-												<a href="img/portfolio/coach2.jpg" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
+												<h5>Joe Breschi</h5>
+												<ul class="align-left">
+													<li>UNC Varsity Lacrosse Coach</li>
+													<li>ACC coach of the year in 2010</li>
+												</ul>
 											 </div>										   
 										 </div>
 									</div>
                                 </article>
 
-                                <article class="col-md-4 isotopeItem photography">
+                                <article class="col-md-3 isotopeItem photography">
 									<div class="portfolio-item">
+										<h3 align="center">Tuesday</h3>
 										<img src="img/portfolio/coach1.jpg" alt="" />
 										 <div class="portfolio-desc align-center">
 											<div class="folio-info">
@@ -278,102 +341,44 @@
                                 </article>
 								
 
-                                <article class="col-md-4 isotopeItem photography">
+                                <article class="col-md-3 isotopeItem photography">
 									<div class="portfolio-item">
-										<img src="img/portfolio/coach2.jpg" alt="" />
+										<h3 align="center">Wednesday</h3>
+										<img src="img/team/Joey-Sankey.jpg" alt="" />
 										 <div class="portfolio-desc align-center">
 											<div class="folio-info">
-												<h5><a href="#">Guest Director</a></h5>
-												<a href="img/portfolio/coach2.jpg" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
-											 </div>										   
-										 </div>
-									</div>
-                                </article>
-<!-- 
-                                <article class="col-md-4 isotopeItem print">
-									<div class="portfolio-item">
-										<img src="img/portfolio/img4.jpg" alt="" />
-										 <div class="portfolio-desc align-center">
-											<div class="folio-info">
-												<h5><a href="#">Portfolio name</a></h5>
-												<a href="img/portfolio/img4.jpg" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
+												<h5>Joey Sankey</h5>
+												<ul class="align-left">
+													<li>2012 All-ACC Academic Men's Lacrosse Team</li>
+													<li>Prolific Goal Scorer</li>
+												</ul>
 											 </div>										   
 										 </div>
 									</div>
                                 </article>
 
-                                <article class="col-md-4 isotopeItem photography">
+                                <article class="col-md-3 isotopeItem photography">
 									<div class="portfolio-item">
-										<img src="img/portfolio/img5.jpg" alt="" />
+										<h3 align="center">Thursday</h3>
+										<img src="img/portfolio/coach1.jpg" alt="" />
 										 <div class="portfolio-desc align-center">
 											<div class="folio-info">
-												<h5><a href="#">Portfolio name</a></h5>
-												<a href="img/portfolio/img5.jpg" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
+												<a href="img/portfolio/coach1.jpg" class="fancybox" title="Coming Soon" titlePosition="over">
+												<h5>Guest Director</h5>
+												<i class="fa fa-plus fa-2x"></i>
+												</a>												
 											 </div>										   
 										 </div>
 									</div>
                                 </article>
 
-                                <article class="col-md-4 isotopeItem webdesign">
-									<div class="portfolio-item">
-										<img src="img/portfolio/img6.jpg" alt="" />
-										 <div class="portfolio-desc align-center">
-											<div class="folio-info">
-												<h5><a href="#">Portfolio name</a></h5>
-												<a href="img/portfolio/img6.jpg" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
-											 </div>										   
-										 </div>
-									</div>
-                                </article>
-
-                                <article class="col-md-4 isotopeItem print">
-									<div class="portfolio-item">
-										<img src="img/portfolio/img7.jpg" alt="" />
-										 <div class="portfolio-desc align-center">
-											<div class="folio-info">
-												<h5><a href="#">Portfolio name</a></h5>
-												<a href="img/portfolio/img7.jpg" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
-											 </div>										   
-										 </div>
-									</div>
-                                </article>
-
-                                <article class="col-md-4 isotopeItem photography">
-									<div class="portfolio-item">
-										<img src="img/portfolio/img8.jpg" alt="" />
-										 <div class="portfolio-desc align-center">
-											<div class="folio-info">
-												<h5><a href="#">Portfolio name</a></h5>
-												<a href="img/portfolio/img8.jpg" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
-											 </div>										   
-										 </div>
-									</div>
-                                </article>
-
-                                <article class="col-md-4 isotopeItem print">
-									<div class="portfolio-item">
-										<img src="img/portfolio/img9.jpg" alt="" />
-										 <div class="portfolio-desc align-center">
-											<div class="folio-info">
-												<h5><a href="#">Portfolio name</a></h5>
-												<a href="img/portfolio/img9.jpg" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
-											 </div>										   
-										 </div>
-									</div>
-                                </article> -->
                             </div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
-<!-- 		<section id="parallax2" class="section parallax" data-stellar-background-ratio="0.5">	
-            <div class="align-center pad-top40 pad-bot40">
-                <blockquote class="bigquote color-white">The Shipley Schools Turf Lacrosse Fields</blockquote>
-				<p class="color-white">Great Facilities</p>
-            </div>
-		</section> -->
-
+		</section-->
+	
 		<!-- contact -->
 		<section id="section-contact" class="section appear clearfix">
 			<div class="container">
